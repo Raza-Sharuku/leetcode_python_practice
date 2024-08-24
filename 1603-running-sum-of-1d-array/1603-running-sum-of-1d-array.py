@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution(object):#code
     def runningSum(self, nums):
         result = []
         for i in range(0,len(nums)):
