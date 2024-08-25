@@ -14,7 +14,6 @@ class Solution(object):
                 l1_result = l1_result + l1.val * demi
                 demi *= 10
                 l1 = l1.next
-            print(l1_result)
         l2_result = 0
         demi = 1
         if (l2.next == None):
@@ -24,14 +23,12 @@ class Solution(object):
                 l2_result = l2_result + l2.val * demi
                 demi *= 10
                 l2 = l2.next
-            print(l2_result)
         
         result = l1_result + l2_result
         l3 = ListNode()
         head = l3
         while (result > 0):
             l3.val = result % 10
-            print(result) 
             result = result / 10
             if (result > 0):
                 l3.next = ListNode()
