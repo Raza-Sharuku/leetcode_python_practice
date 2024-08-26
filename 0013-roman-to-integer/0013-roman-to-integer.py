@@ -8,7 +8,6 @@ class Solution(object):
                 i += 1
             else:
                 result += roman_dict[s[i]]
-            i += 1
-            
+            i += 1    
         return result
         
