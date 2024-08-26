@@ -5,7 +5,7 @@ class Solution(object):
         i = 0
         while i < len(s):
             if i + 1 < len(s) and roman_dict[s[i]] < roman_dict[s[i + 1]]:
-                result = result + (roman_dict[s[i + 1]] - roman_dict[s[i]])
+                result += (roman_dict[s[i + 1]] - roman_dict[s[i]])
                 i += 1
             else:
                 result += roman_dict[s[i]]
